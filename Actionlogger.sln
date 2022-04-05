@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actionlogger.ProfileService.Api", "src\ProfileService\Actionlogger.ProfileService.Api\Actionlogger.ProfileService.Api.csproj", "{84BDF5BA-7A89-455A-99BE-C68ACC905DF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{62822BCD-B27E-4F2E-BF12-4226FBAAB011}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProfileService", "ProfileService", "{8F361607-B158-4F87-92A5-ABE283D2C869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actionlogger.ProfileService.Core", "src\ProfileService\Actionlogger.ProfileService.Core\Actionlogger.ProfileService.Core.csproj", "{EB6B26CD-D75D-417D-909A-A24B36BB95DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actionlogger.ProfileService.EntityFramework", "src\ProfileService\Actionlogger.ProfileService.EntityFramework\Actionlogger.ProfileService.EntityFramework.csproj", "{87419D14-7914-4F08-8673-3FE73A043646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actionlogger.Core", "src\Actionlogger.Core\Actionlogger.Core.csproj", "{911EE94D-F785-49A8-8924-0578A03B2E8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84BDF5BA-7A89-455A-99BE-C68ACC905DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84BDF5BA-7A89-455A-99BE-C68ACC905DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84BDF5BA-7A89-455A-99BE-C68ACC905DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84BDF5BA-7A89-455A-99BE-C68ACC905DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6B26CD-D75D-417D-909A-A24B36BB95DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6B26CD-D75D-417D-909A-A24B36BB95DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6B26CD-D75D-417D-909A-A24B36BB95DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6B26CD-D75D-417D-909A-A24B36BB95DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87419D14-7914-4F08-8673-3FE73A043646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87419D14-7914-4F08-8673-3FE73A043646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87419D14-7914-4F08-8673-3FE73A043646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87419D14-7914-4F08-8673-3FE73A043646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911EE94D-F785-49A8-8924-0578A03B2E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911EE94D-F785-49A8-8924-0578A03B2E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911EE94D-F785-49A8-8924-0578A03B2E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911EE94D-F785-49A8-8924-0578A03B2E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F361607-B158-4F87-92A5-ABE283D2C869} = {62822BCD-B27E-4F2E-BF12-4226FBAAB011}
+		{84BDF5BA-7A89-455A-99BE-C68ACC905DF1} = {8F361607-B158-4F87-92A5-ABE283D2C869}
+		{EB6B26CD-D75D-417D-909A-A24B36BB95DB} = {8F361607-B158-4F87-92A5-ABE283D2C869}
+		{87419D14-7914-4F08-8673-3FE73A043646} = {8F361607-B158-4F87-92A5-ABE283D2C869}
+		{911EE94D-F785-49A8-8924-0578A03B2E8F} = {62822BCD-B27E-4F2E-BF12-4226FBAAB011}
+	EndGlobalSection
+EndGlobal
