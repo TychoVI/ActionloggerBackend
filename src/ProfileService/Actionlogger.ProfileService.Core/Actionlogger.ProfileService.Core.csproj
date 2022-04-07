@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\Actionlogger.Core\Actionlogger.Core.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,0 +1,1 @@
+dotnet ef migrations add %1 -c AppDbContext -o ../Actionlogger.ProfileService.EntityFramework/Migrations/ -p ../Actionlogger.ProfileService.EntityFramework/Actionlogger.ProfileService.EntityFramework.csproj
