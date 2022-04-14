@@ -18,4 +18,11 @@ public class ProfileRepository : IProfileRepository
     {
         return await _db.Profiles.ToListAsync();
     }
+
+    public async Task<Profile> Create(Profile profile)
+    {
+        _db.Profiles.Add(profile);
+        await _db.SaveChangesAsync();
+        return profile;
+    }
 }

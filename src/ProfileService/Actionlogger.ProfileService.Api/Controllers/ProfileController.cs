@@ -20,4 +20,10 @@ public class ProfileController : Controller
     {
         return await _profileRepository.GetAll();
     }
+
+    [HttpPost]
+    public async Task<Profile> Create(Profile profile)
+    {
+        return await _profileRepository.Create(profile);
+    }
 }

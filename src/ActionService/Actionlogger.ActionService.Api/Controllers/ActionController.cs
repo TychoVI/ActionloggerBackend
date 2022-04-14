@@ -18,6 +18,19 @@ public class ActionController : Controller
     [HttpGet]
     public async Task<IEnumerable<Action>> GetAll()
     {
+        Thread.Sleep(2000);
         return await _actionRepository.GetAll();
+    }
+
+    [HttpGet("{id:guid}")]
+    public async Task<Action> GetById(Guid id)
+    {
+        return await _actionRepository.GetById(id);
+    }
+
+    [HttpPost]
+    public async Task<Action> Create(Action action)
+    {
+        return await _actionRepository.Create(action);
     }
 }

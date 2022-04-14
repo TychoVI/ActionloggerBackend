@@ -23,4 +23,11 @@ public class ActionRepository : IActionRepository
     {
         return await _db.Actions.FindAsync(id);
     }
+
+    public async Task<Action> Create(Action action)
+    {
+        _db.Actions.Add(action);
+        await _db.SaveChangesAsync();
+        return action;
+    }
 }
