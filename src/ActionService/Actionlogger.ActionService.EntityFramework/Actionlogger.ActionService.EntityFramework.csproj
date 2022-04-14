@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Actionlogger.ProfileService.Core\Actionlogger.ProfileService.Core.csproj" />
+      <ProjectReference Include="..\Actionlogger.ActionService.Core\Actionlogger.ActionService.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>

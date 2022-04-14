@@ -1,4 +1,4 @@
-using Actionlogger.ProfileService.EntityFramework;
+using Actionlogger.ActionService.EntityFramework;
 
 var builder = WebApplication.CreateBuilder(args);
 

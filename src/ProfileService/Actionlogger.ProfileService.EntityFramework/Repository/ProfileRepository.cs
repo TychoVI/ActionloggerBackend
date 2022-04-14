@@ -3,7 +3,7 @@ using Actionlogger.ProfileService.Core.Interface;
 using Actionlogger.ProfileService.EntityFramework.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Actionlogger.ProfileService.EntityFramework.Interface;
+namespace Actionlogger.ProfileService.EntityFramework.Repository;
 
 public class ProfileRepository : IProfileRepository
 {

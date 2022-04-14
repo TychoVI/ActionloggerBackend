@@ -1,11 +1,10 @@
-﻿using Actionlogger.Core.Entity;
-using Actionlogger.ProfileService.Core.Interface;
-using Actionlogger.ProfileService.EntityFramework.Data;
-using Actionlogger.ProfileService.EntityFramework.Repository;
+﻿using Actionlogger.ActionService.Core.Interface;
+using Actionlogger.ActionService.EntityFramework.Data;
+using Actionlogger.ActionService.EntityFramework.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Actionlogger.ProfileService.EntityFramework;
+namespace Actionlogger.ActionService.EntityFramework;
 
 public static class DependencyInjectionEntityFramework
 {
@@ -19,7 +18,7 @@ public static class DependencyInjectionEntityFramework
                 .EnableDetailedErrors();
         });
         
-        services.AddTransient<IProfileRepository, ProfileRepository>();
+        services.AddTransient<IActionRepository, ActionRepository>();
 
         return services;
     }
