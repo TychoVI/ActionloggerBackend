@@ -1,4 +1,5 @@
 ﻿using Actionlogger.ActionService.Core.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Action = Actionlogger.Core.Entity.Action;
 
@@ -16,9 +17,10 @@ public class ActionController : Controller
     }
 
     [HttpGet]
+    [Authorize]
     public async Task<IEnumerable<Action>> GetAll()
     {
-        Thread.Sleep(2000);
+        Thread.Sleep(500);
         return await _actionRepository.GetAll();
     }
 
