@@ -21,7 +21,16 @@ public class ActionController : Controller
     public async Task<IEnumerable<Action>> GetAll()
     {
         Thread.Sleep(500);
-        return await _actionRepository.GetAll();
+        //return await _actionRepository.GetAll();
+
+        var actions = new List<Action>();
+        actions.Add(new Action
+        {
+            Id = Guid.NewGuid(),
+            Task = User.IsInRole("default-roles-actionlogger").ToString()
+        });
+
+        return actions;
     }
 
     [HttpGet("{id:guid}")]
