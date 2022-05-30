@@ -1,6 +1,7 @@
 ﻿using Actionlogger.ActionService.Core.Interface;
 using Actionlogger.ActionService.EntityFramework.Data;
 using Actionlogger.ActionService.EntityFramework.Repository;
+using Actionlogger.Core.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,6 +20,7 @@ public static class DependencyInjectionEntityFramework
         });
         
         services.AddTransient<IActionRepository, ActionRepository>();
+        services.AddTransient<IMeetingRepository, MeetingRepository>();
 
         return services;
     }

@@ -20,7 +20,6 @@ public class ActionController : Controller
     [Authorize]
     public async Task<IEnumerable<Action>> GetAll()
     {
-        Thread.Sleep(500);
         //return await _actionRepository.GetAll();
 
         var actions = new List<Action>();
