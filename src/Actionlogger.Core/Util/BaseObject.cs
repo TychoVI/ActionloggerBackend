@@ -3,7 +3,7 @@
 public class BaseObject
 {
     public Guid Id { get; set; }
-    public DateTime DateTimeCreated { get; }
+    public DateTime DateTimeCreated { get; private set; }
 
     public BaseObject()
     {
