@@ -17,7 +17,7 @@ builder.Services.AddPersistence(builder.Configuration.GetValue<string>("connecti
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (!app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
