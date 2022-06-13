@@ -80,7 +80,7 @@ app.UseCors(options =>
     options.AllowAnyHeader()
         .AllowAnyMethod()
         .AllowCredentials()
-        .WithOrigins("http://localhost:3000", "https://dev.actionlogger.app");
+        .WithOrigins("http://localhost:3000", "https://dev.actionlogger.app", "https://staging.actionloggerfrontend.pages.dev");
 });
 
 app.Run();
